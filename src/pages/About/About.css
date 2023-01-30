@@ -1,0 +1,39 @@
+.about-img{
+    width: 200px;
+    border-radius: .5rem;
+    justify-self: center;
+    align-self: center;
+}
+.about-description{
+    text-align: center;
+    margin-bottom: var(--mb-2-5);
+}
+.about-btn{
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (min-width:568px) {
+    .about-container{
+      grid-template-columns: repeat(2,1fr);
+  }
+}
+
+@media screen and (min-width:768px){
+    .about-container{
+      column-gap: 5rem;
+    }
+    .about-img{
+      width: 350px;
+    }
+    .about-description{
+      text-align: initial;
+    }
+    .about-info{
+      justify-content: space-between;
+    }
+    .about-btn{
+      justify-content: initial;
+    }
+
+  }
