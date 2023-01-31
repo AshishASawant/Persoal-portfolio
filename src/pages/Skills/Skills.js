@@ -7,7 +7,7 @@ import reactImg from "../../assets/img/react.png";
 import nodejsImg from "../../assets/img/nodejs.png";
 import mongodbImg from "../../assets/img/mongodb.png";
 import expressImg from "../../assets/img/express.png";
-import chartjsImg from "../../assets/img/chartjs.png";
+import bootstrapImg from "../../assets/img/bootstrap.png";
 
 const Skills = () => {
   let skills = [
@@ -47,8 +47,8 @@ const Skills = () => {
       style: {},
     },
     {
-      name: "CHART JS",
-      imgSrc: chartjsImg,
+      name: "Bootstrap",
+      imgSrc: bootstrapImg,
       style: {},
     },
   ];
