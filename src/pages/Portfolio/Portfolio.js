@@ -8,6 +8,7 @@ import calculator from "../../assets/img/calculator.png"
 import textutils from "../../assets/img/textutils.png"
 import tseries from "../../assets/img/tseries.png"
 import dailybugle from "../../assets/img/dailybugle.png"
+import cloudbook from "../../assets/img/cloudbook.png"
 
 // Import Swiper styles
 import "swiper/css";
@@ -19,6 +20,13 @@ import { Navigation, Pagination } from "swiper";
 
 const Portfolio = () => {
   const projects = [
+    {
+      name: "Cloudbook",
+      description: "Cloudbook is a full stack app that can be used to store and manipulate notes. It also has user authentication using jwt token",
+      code: "https://github.com/AshishASawant/Cloud-book",
+      demo: "https://cloudbookweb.netlify.app",
+      imgLink:cloudbook
+    },
     {
       name: "T-Series",
       description: "T-series is a spotify clone made using react.It uses the spotify API to log in an actual spotify user through his login credentilas ",
@@ -77,9 +85,9 @@ const Portfolio = () => {
       <div className="portfolio-container container">
         <Swiper
           cssMode={true}
+          // loop={true}
           slidesPerView={1}
           spaceBetween={30}
-          loop={true}
           pagination={{
             el: ".swiper-pagination",
             clickable: true,

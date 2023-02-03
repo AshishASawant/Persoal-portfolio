@@ -8,6 +8,9 @@ import nodejsImg from "../../assets/img/nodejs.png";
 import mongodbImg from "../../assets/img/mongodb.png";
 import expressImg from "../../assets/img/express.png";
 import bootstrapImg from "../../assets/img/bootstrap.png";
+import jwtImg from "../../assets/img/jwt.png";
+import tailwindImg from "../../assets/img/tailwind.png";
+import reduxImg from "../../assets/img/redux.png";
 
 const Skills = () => {
   let skills = [
@@ -37,7 +40,7 @@ const Skills = () => {
       style: { },
     },
     {
-      name: "EXPRESS",
+      name: "EXPRESS JS",
       imgSrc:expressImg,
       style: {},
     },
@@ -49,6 +52,21 @@ const Skills = () => {
     {
       name: "Bootstrap",
       imgSrc: bootstrapImg,
+      style: {},
+    },
+    {
+      name: "Tailwind",
+      imgSrc: tailwindImg,
+      style: {},
+    },
+    {
+      name: "Redux",
+      imgSrc: reduxImg,
+      style: {},
+    },
+    {
+      name: "JWT",
+      imgSrc: jwtImg,
       style: {},
     },
   ];
