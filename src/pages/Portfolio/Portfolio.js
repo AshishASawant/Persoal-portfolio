@@ -9,6 +9,7 @@ import textutils from "../../assets/img/textutils.png"
 import tseries from "../../assets/img/tseries.png"
 import dailybugle from "../../assets/img/dailybugle.png"
 import cloudbook from "../../assets/img/cloudbook.png"
+import cycloboard from "../../assets/img/cycloboard.png"
 
 // Import Swiper styles
 import "swiper/css";
@@ -33,6 +34,13 @@ const Portfolio = () => {
       code: "https://github.com/AshishASawant/t-series",
       demo: "https://tseries.netlify.app",
       imgLink:tseries
+    },
+    {
+      name: "Cycloboard",
+      description: "Cycloboard includes a range of features such as purchase, employee, and customer order details, as well as several charts for visual data representation.",
+      code: "https://github.com/AshishASawant/Multiuse-dashboard",
+      demo: "https://cycloboard.netlify.app",
+      imgLink:cycloboard
     },
     {
       name: "Daily Bugle",
