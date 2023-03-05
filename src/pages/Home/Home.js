@@ -2,6 +2,7 @@ import React from "react";
 import "./home.css";
 // import svgImg from "../../assets/img/perfil.png";
 import resume from "../../assets/pdf/Ashish-Cv.pdf"
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 const Home = () => {
   return (
@@ -76,24 +77,24 @@ const Home = () => {
             </div> */}
           <div className="home-data">
             <h1 className="home-title">
-              Hi, I am <span className="my-name">Ashish</span>{" "}
+              Hi, I am <AnimationOnScroll animateIn="animate__zoomInDown" duration={1} style={{display:'inline-block'}} className="my-name">Ashish</AnimationOnScroll>{" "}
             </h1>
-            <h3 className="home-subtitle">Full Stack Developer</h3>
-            <p className="home-description">
+            <AnimationOnScroll animateIn="animate__fadeInRight" delay={2000}  className="home-subtitle">Full Stack Developer</AnimationOnScroll>
+            <AnimationOnScroll animateIn="animate__fadeInRight" delay={3300} className="home-description">
             A driven and problem-solving individual with a passion for full-stack development. Proficient in MERN stack technologies including MongoDB, Express, React, and Node.js, committed to delivering high-quality and scalable web applications.
-            </p>
-            <a href="#contact" className="btn btn-flex">
+            </AnimationOnScroll>
+            <AnimationOnScroll animateIn="animate__fadeInRight" delay={4300} href="#contact" className="btn btn-flex">
               Contact Me<i className="uil uil-message btn-icon"></i>
-            </a>
+            </AnimationOnScroll>
           </div>
         </div>
-        <div className="home-scroll">
+        <AnimationOnScroll  scrollableParentSelector="#home" initiallyVisible={true} animateIn="animate__shakeY" className="home-scroll">
           <a href="#about" className="home-scroll-btn btn-flex ">
             <i className="uil uil-mouse-alt home-scroll-mouse"></i>
             <span className="home-scroll-name">Scroll down</span>
             <i className="uil uil-arrow-down home-scroll-arrow"></i>
           </a>
-        </div>
+        </AnimationOnScroll>
       </div>
     </section>
   );

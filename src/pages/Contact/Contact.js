@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 import swal from "sweetalert";
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 import "./contact.css";
 const Contact = () => {
   const [contactDetails, setContactDetails] = useState({
@@ -56,34 +57,34 @@ const Contact = () => {
 
       <div className="contact-container container grid">
         <div>
-          <div className="contact-info">
+          <AnimationOnScroll animateIn="animate__fadeInLeftBig" className="contact-info">
             <i className="uil uil-phone contact-icon"></i>
             <div>
               <h3 className="contact-title">Phone</h3>
               <span className="contact-subtitle">+91 9309496048</span>
             </div>
-          </div>
-          <div className="contact-info">
+          </AnimationOnScroll>
+          <AnimationOnScroll animateIn="animate__fadeInLeftBig" duration={1.4} className="contact-info">
             <i className="uil uil-envelope contact-icon"></i>
             <div>
               <h3 className="contact-title">Email</h3>
               <span className="contact-subtitle">ashishsawant2050@gmail.com</span>
             </div>
-          </div>
-          <div className="contact-info">
+          </AnimationOnScroll>
+          <AnimationOnScroll animateIn="animate__fadeInLeftBig" duration={1.8} className="contact-info">
             <i className="uil uil-map-marker contact-icon"></i>
             <div>
               <h3 className="contact-title">Location</h3>
               <span className="contact-subtitle">Navi-Mumbai, Maharashtra</span>
             </div>
-          </div>
+          </AnimationOnScroll>
         </div>
         <form
           className="contact-form grid"
           autoComplete="off"
           onSubmit={handelSubmit}
         >
-          <div className="contact-content">
+          <AnimationOnScroll animateIn="animate__fadeInRight" className="contact-content">
             <label htmlFor="" className="contact-label">
               Name
             </label>
@@ -96,8 +97,8 @@ const Contact = () => {
               id="name"
               required
             />
-          </div>
-          <div className="contact-content">
+          </AnimationOnScroll>
+          <AnimationOnScroll animateIn="animate__fadeInRight" duration={1.4} className="contact-content">
             <label htmlFor="" className="contact-label">
               Email
             </label>
@@ -110,12 +111,12 @@ const Contact = () => {
               id="email"
               required
             />
-          </div>
+          </AnimationOnScroll>
           {/* <div className="contact-content">
                     <label htmlFor="" className="contact-label">Project</label>
                     <input type="text" className="contact-input" />
                 </div> */}
-          <div className="contact-content">
+          <AnimationOnScroll animateIn="animate__fadeInRight" duration={1.8} className="contact-content">
             <label htmlFor="" className="contact-label">
               Message
             </label>
@@ -129,13 +130,14 @@ const Contact = () => {
               onChange={handelChange}
               required
             ></textarea>
-          </div>
+          </AnimationOnScroll>
           <button
             type="submit"
             ref={submitBtnRef}
             style={{ display: "none" }}
           ></button>
-          <div style={{ display: "flex" }}>
+          <AnimationOnScroll animateIn="animate__fadeIn" 
+           style={{ display: "flex" }}>
             <a
               href="###"
               onClick={() => {
@@ -152,7 +154,7 @@ const Contact = () => {
                 alt=""
               />
             )}
-          </div>
+          </AnimationOnScroll>
         </form>
       </div>
     </section>

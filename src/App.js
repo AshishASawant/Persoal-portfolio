@@ -10,10 +10,7 @@ import Scrolltop from "./components/scrolltop/Scrolltop";
 
 const App = () => {
 
-  document.body.classList.add("dark-theme")
-
   //navbar scroll active class
-  
   function scrollActive() {
     const sections = document.querySelectorAll("section[id]");
     const scrollY = window.pageYOffset;

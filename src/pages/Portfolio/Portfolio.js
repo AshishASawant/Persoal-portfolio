@@ -1,5 +1,6 @@
 import React from "react";
 import "./portfolio.css";
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 import { Swiper, SwiperSlide } from "swiper/react";
 import todoapp from "../../assets/img/todoapp.png"
 import tictactoe from "../../assets/img/tictactoe.png"
@@ -90,7 +91,7 @@ const Portfolio = () => {
     <section className="portfolio section" id="portfolio">
       <h2 className="section-title">Portfolio</h2>
       <span className="section-subtitle">Most recent projects</span>
-      <div className="portfolio-container container">
+      <AnimationOnScroll animateIn="animate__bounceIn" className="portfolio-container container">
         <Swiper
           cssMode={true}
           // loop={true}
@@ -147,7 +148,7 @@ const Portfolio = () => {
           </div>
           <div className="swiper-pagination"></div>
         </Swiper>
-      </div>
+      </AnimationOnScroll>
     </section>
   );
 };
