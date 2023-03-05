@@ -88,13 +88,11 @@ const Home = () => {
             </AnimationOnScroll>
           </div>
         </div>
-        <AnimationOnScroll  scrollableParentSelector="#home" initiallyVisible={true} animateIn="animate__shakeY" className="home-scroll">
           <a href="#about" className="home-scroll-btn btn-flex ">
             <i className="uil uil-mouse-alt home-scroll-mouse"></i>
             <span className="home-scroll-name">Scroll down</span>
             <i className="uil uil-arrow-down home-scroll-arrow"></i>
           </a>
-        </AnimationOnScroll>
       </div>
     </section>
   );
