@@ -49,6 +49,9 @@
 .home-scroll-btn{
     color: var(--first-color);
     transition: .3s;
+    animation-name: shakeY;
+    animation: shakeY 1.5s linear 5s;
+    -webkit-animation-name:shakeY 2s ;
 }
 .home-scroll-btn:hover{
     transform: translateY(.25rem);
@@ -67,6 +70,9 @@
 }
 .my-name{
   color: var(--first-color);
+  -webkit-animation-name:zoomIn ;
+  animation-name: zoomIn;
+  animation: zoomIn 5s;
 }
 
 /* =======================Buttons============================== */
@@ -89,6 +95,72 @@
 .btn-flex{
     display: inline-flex;
     align-items: center;
+}
+
+@-webkit-keyframes shakeY {
+  0%,to {
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0)
+  }
+
+  10%,30%,50%,70%,90% {
+      -webkit-transform: translate3d(0,-2px,0);
+      transform: translate3d(0,-5px,0)
+  }
+
+  20%,40%,60%,80% {
+      -webkit-transform: translate3d(0,2px,0);
+      transform: translate3d(0,2px,0)
+  }
+}
+
+
+
+@keyframes  shakeY {
+  0%,to {
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0)
+  }
+
+  10%,30%,50%,70%,90% {
+      -webkit-transform: translate3d(0,-2px,0);
+      transform: translate3d(0,-5px,0)
+  }
+
+  20%,40%,60%,80% {
+      -webkit-transform: translate3d(0,2px,0);
+      transform: translate3d(0,2px,0)
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+      opacity: 0;
+      -webkit-transform: scale3d(.3,.3,.3);
+      transform: scale3d(.3,.3,.3)
+  }
+
+  50% {
+      opacity: 1
+  }
+}
+
+.animate__zoomIn {
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn
+}
+
+
+@-webkit-keyframes zoomIn {
+  0% {
+      opacity: 0;
+      -webkit-transform: scale3d(.3,.3,.3);
+      transform: scale3d(.3,.3,.3)
+  }
+
+  50% {
+      opacity: 1
+  }
 }
 
 @media screen and (max-width:350px) {
