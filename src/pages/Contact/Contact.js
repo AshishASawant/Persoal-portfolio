@@ -57,21 +57,21 @@ const Contact = () => {
 
       <div className="contact-container container grid">
         <div>
-          <AnimationOnScroll animateIn="animate__fadeInLeftBig" className="contact-info">
+          <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInLeftBig" className="contact-info">
             <i className="uil uil-phone contact-icon"></i>
             <div>
               <h3 className="contact-title">Phone</h3>
               <span className="contact-subtitle">+91 9309496048</span>
             </div>
           </AnimationOnScroll>
-          <AnimationOnScroll animateIn="animate__fadeInLeftBig" duration={1.4} className="contact-info">
+          <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInLeftBig" duration={1.4} className="contact-info">
             <i className="uil uil-envelope contact-icon"></i>
             <div>
               <h3 className="contact-title">Email</h3>
               <span className="contact-subtitle">ashishsawant2050@gmail.com</span>
             </div>
           </AnimationOnScroll>
-          <AnimationOnScroll animateIn="animate__fadeInLeftBig" duration={1.8} className="contact-info">
+          <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInLeftBig" duration={1.8} className="contact-info">
             <i className="uil uil-map-marker contact-icon"></i>
             <div>
               <h3 className="contact-title">Location</h3>
@@ -84,7 +84,7 @@ const Contact = () => {
           autoComplete="off"
           onSubmit={handelSubmit}
         >
-          <AnimationOnScroll animateIn="animate__fadeInRight" className="contact-content">
+          <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInRight" className="contact-content">
             <label htmlFor="" className="contact-label">
               Name
             </label>
@@ -98,7 +98,7 @@ const Contact = () => {
               required
             />
           </AnimationOnScroll>
-          <AnimationOnScroll animateIn="animate__fadeInRight" duration={1.4} className="contact-content">
+          <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInRight" duration={1.4} className="contact-content">
             <label htmlFor="" className="contact-label">
               Email
             </label>
@@ -116,7 +116,7 @@ const Contact = () => {
                     <label htmlFor="" className="contact-label">Project</label>
                     <input type="text" className="contact-input" />
                 </div> */}
-          <AnimationOnScroll animateIn="animate__fadeInRight" duration={1.8} className="contact-content">
+          <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInRight"  duration={1.8} className="contact-content">
             <label htmlFor="" className="contact-label">
               Message
             </label>
@@ -136,7 +136,7 @@ const Contact = () => {
             ref={submitBtnRef}
             style={{ display: "none" }}
           ></button>
-          <AnimationOnScroll animateIn="animate__fadeIn" 
+          <AnimationOnScroll animateOnce={true} animateIn="animate__fadeIn" 
            style={{ display: "flex" }}>
             <a
               href="###"

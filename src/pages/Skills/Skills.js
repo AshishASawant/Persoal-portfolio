@@ -79,7 +79,7 @@ const Skills = () => {
       <div className="skill-container container grid">
         {skills.map(skill=>{
           return(
-          <AnimationOnScroll animateIn="animate__backInUp" key={skill.name} className="skill-item">
+          <AnimationOnScroll animateIn="animate__backInUp" animateOnce={true}  key={skill.name} className="skill-item">
           <img
             className="skill-img"
             src={skill.imgSrc}
