@@ -11,6 +11,8 @@ import tseries from "../../assets/img/tseries.png"
 import dailybugle from "../../assets/img/dailybugle.png"
 import cloudbook from "../../assets/img/cloudbook.png"
 import cycloboard from "../../assets/img/cycloboard.png"
+import streambeat from "../../assets/img/streambeat.jpg"
+import alphamart from "../../assets/img/alphamart.jpg"
 
 // Import Swiper styles
 import "swiper/css";
@@ -23,6 +25,20 @@ import { Navigation, Pagination } from "swiper";
 const Portfolio = () => {
   const projects = [
     {
+      name: "StreamBeat",
+      description: " The ultimate web app merging blockbuster movies and chart-topping music for a seamless fusion of captivating entertainment.",
+      code: "https://github.com/AshishASawant/StreamBeat",
+      demo: "https://streambeat.vercel.app",
+      imgLink:streambeat
+    },
+    {
+      name: "Alphamart",
+      description: "AlphaMart is a dynamic e-commerce website powered by React and Redux, showcasing various products and customer-oriented features. Please note that the backend and payment functionality are still a work in progress.",
+      code: "https://github.com/AshishASawant/Ecommerce-Website",
+      demo: "https://alphamart.netlify.app",
+      imgLink:alphamart
+    },
+    {
       name: "Cloudbook",
       description: "Cloudbook is a full stack app that can be used to store and manipulate notes. It also has user authentication using jwt token",
       code: "https://github.com/AshishASawant/Cloud-book",
@@ -30,18 +46,18 @@ const Portfolio = () => {
       imgLink:cloudbook
     },
     {
+      name: "Cycloboard",
+      description: "Cycloboard is a dashboard application that includes a range of features such as purchase, employee, and customer order details, as well as several charts for visual data representation.I plan to use it with my ecommerce website in fututre",
+      code: "https://github.com/AshishASawant/Multiuse-dashboard",
+      demo: "https://cycloboard.netlify.app",
+      imgLink:cycloboard
+    },
+    {
       name: "T-Series",
       description: "T-series is a spotify clone made using react.It uses the spotify API to log in an actual spotify user through his login credentilas ",
       code: "https://github.com/AshishASawant/t-series",
       demo: "https://tseries.netlify.app",
       imgLink:tseries
-    },
-    {
-      name: "Cycloboard",
-      description: "Cycloboard includes a range of features such as purchase, employee, and customer order details, as well as several charts for visual data representation.",
-      code: "https://github.com/AshishASawant/Multiuse-dashboard",
-      demo: "https://cycloboard.netlify.app",
-      imgLink:cycloboard
     },
     {
       name: "Daily Bugle",

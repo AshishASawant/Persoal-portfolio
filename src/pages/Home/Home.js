@@ -59,7 +59,7 @@ const Home = () => {
             </h1>
             <AnimationOnScroll
               animateIn="animate__fadeInRight"
-              delay={1500}
+              delay={1100}
               animateOnce={true}
               className="home-subtitle"
             >
@@ -67,7 +67,7 @@ const Home = () => {
             </AnimationOnScroll>
             <AnimationOnScroll
               animateIn="animate__fadeInRight"
-              delay={3000}
+              delay={1500}
               animateOnce={true}
               className="home-description"
             >
@@ -78,7 +78,7 @@ const Home = () => {
             </AnimationOnScroll>
             <AnimationOnScroll
               animateIn="animate__fadeInRight"
-              delay={4000}
+              delay={2000}
               animateOnce={true}
               href="#contact"
               className="btn btn-flex"

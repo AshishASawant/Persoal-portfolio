@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./navbar.css"
-
+import {LuMoon,LuSun} from 'react-icons/lu'
 const Navbar = () => {
 
 
@@ -57,8 +57,10 @@ const Navbar = () => {
           </ul>
           <i className="uil uil-times nav-close" onClick={showMenu}></i>
         </div>
-        <div className="nav-btn" >
-            <i className={`uil uil-${(mode==='light'?"moon":'sun')} change-theme`} id="theme-btn" onClick={changeMode}></i>
+        <div className="nav-btn nav-item" >
+          {
+            mode==='dark'?<LuMoon id="theme-btn" className="change-theme" onClick={changeMode}></LuMoon>:<LuSun id="theme-btn" className="change-theme" onClick={changeMode}></LuSun>
+          }
             <div className="nav-toggle" onClick={showMenu}>
             <i className="uil uil-apps"></i>
             </div>

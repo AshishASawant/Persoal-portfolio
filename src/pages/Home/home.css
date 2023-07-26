@@ -50,7 +50,7 @@
     color: var(--first-color);
     transition: .3s;
     animation-name: shakeY;
-    animation: shakeY 1.5s linear 5s;
+    animation: shakeY 1.5s linear 3s;
     -webkit-animation-name:shakeY 2s ;
 }
 .home-scroll-btn:hover{
@@ -72,7 +72,7 @@
   color: var(--first-color);
   -webkit-animation-name:zoomIn ;
   animation-name: zoomIn;
-  animation: zoomIn 5s;
+  animation: zoomIn 4s;
 }
 
 /* =======================Buttons============================== */
